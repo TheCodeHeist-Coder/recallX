@@ -1,9 +1,9 @@
 import { Router, type Response, type Request } from "express";
-import { errorResponse } from "../utils/error";
-import { prisma } from "../lib/prisma";
+import { errorResponse } from "../utils/error.js";
+import { prisma } from "../lib/prisma.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import { use } from "react";
+
 
 
 const router = Router();
@@ -13,7 +13,6 @@ const router = Router();
 router.post("/register", async (req: Request, res: Response) => {
 
     try {
-
 
 
         const { username, password } = req.body;
