@@ -7,8 +7,8 @@ services:
       - '5432:5432'
     environment:
       POSTGRES_DB: devcommands
-      POSTGRES_USER: devuser
-      POSTGRES_PASSWORD: devpass
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: recallx
     volumes:
       - pgdata:/var/lib/postgresql/data
 
